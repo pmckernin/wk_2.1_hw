@@ -10,7 +10,7 @@ class BasicsController < ApplicationController
     # Your code goes below
     #===============================================
 
-    @result = "Replace this string with your answer"
+    @result = "It worked!"
     render 'basics'
   end
 
@@ -22,7 +22,7 @@ class BasicsController < ApplicationController
     # Your code goes below
     #===============================================
 
-    @result = "Replace this string with your answer"
+    @result = "7"
     render 'basics'
   end
 
@@ -38,7 +38,7 @@ class BasicsController < ApplicationController
     #===============================================
     country = "kyrgyzstan"
 
-    @result = "Replace this string with your answer"
+    @result = country.length
     render 'basics'
   end
 
@@ -51,7 +51,7 @@ class BasicsController < ApplicationController
     #===============================================
     phrase = "mYsPaCe"
 
-    @result = "Replace this string with your answer"
+    @result = phrase.downcase
     render 'basics'
   end
 
@@ -65,7 +65,7 @@ class BasicsController < ApplicationController
     #===============================================
     name = "neal"
 
-    @result = "Replace this string with your answer"
+    @result = name.capitalize
     render 'basics'
   end
 
@@ -78,7 +78,7 @@ class BasicsController < ApplicationController
     #===============================================
     phrase = "not a palindrome"
 
-    @result = "Replace this string with your answer"
+    @result = phrase.reverse
     render 'basics'
   end
 
@@ -96,7 +96,7 @@ class BasicsController < ApplicationController
     middle = "Delano"
     last = "Roosevelt"
 
-    @result = "Replace this string with your answer"
+    @result = "first + middle"
     render 'basics'
   end
 
@@ -111,7 +111,7 @@ class BasicsController < ApplicationController
     middle = "Delano"
     last = "Roosevelt"
 
-    @result = "Replace this string with your answer"
+    @result = first +" " + middle + " "  + last
     render 'basics'
   end
 
@@ -125,7 +125,7 @@ class BasicsController < ApplicationController
     quantity = 13
     item = "coconuts"
 
-    @result = "Replace this string with your answer"
+    @result = item + " " + "#{quantity}"
     render 'basics'
   end
 
@@ -140,7 +140,7 @@ class BasicsController < ApplicationController
     quantity = 12
     item = " monkeys"
 
-    @result = quantity + item
+    @result = quantity.to_s + item
     render 'basics'
   end
 end

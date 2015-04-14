@@ -11,7 +11,7 @@ class HashesController < ApplicationController
     #===============================================
     book = { "binding" => "hardcover", "color" => "red", "num_pages" => 372}
 
-    @result = "Replace this string with your answer"
+    @result = book["num_pages"]
     render 'hashes'
   end
 
@@ -24,7 +24,7 @@ class HashesController < ApplicationController
     #===============================================
     user = { "id" => 45, "email" => "name@example.com" }
 
-    @result = "Replace this string with your answer"
+    @result = user["id"]
     render 'hashes'
   end
 
@@ -37,7 +37,7 @@ class HashesController < ApplicationController
     #===============================================
     item = { "name" => "bag", "brand" => "timbuk2", "price" => 79.00 }
 
-    @result = "Replace this string with your answer"
+    @result = item["price"]
     render 'hashes'
   end
 
@@ -50,7 +50,7 @@ class HashesController < ApplicationController
     #===============================================
     fruit = { "name" => "durian", "smelly?" => true, "size" => "medium" }
 
-    @result = "Replace this string with your answer"
+    @result = fruit["size"]
     render 'hashes'
   end
 
@@ -72,7 +72,7 @@ class HashesController < ApplicationController
         }
     }
 
-    @result = "Replace this string with your answer"
+    @result = user["birthday"]["month"]
     render 'hashes'
   end
 
@@ -93,7 +93,7 @@ class HashesController < ApplicationController
         }
     }
 
-    @result = "Replace this string with your answer"
+    @result = computer["battery"]["life"]
     render 'hashes'
   end
 
@@ -110,8 +110,8 @@ class HashesController < ApplicationController
     # Your code goes below
     #===============================================
     book = { "binding" => "hardcover", "color" => "red", "num_pages" => 372}
-
-    @result = book
+book["weight"]="10 ounces"
+    @result = book["weight"]
     render 'hashes'
   end
 
@@ -126,8 +126,8 @@ class HashesController < ApplicationController
     # Your code goes below
     #===============================================
     user = { "id" => 45, "email" => "name@example.com" }
-
-    @result = user
+user["member_for"]="234 days"
+    @result = user["member_for"]
     render 'hashes'
   end
 
@@ -142,8 +142,8 @@ class HashesController < ApplicationController
     # Your code goes below
     #===============================================
     item = { "name" => "bag", "brand" => "timbuk2", "price" => 79.00 }
-
-    @result = item
+item["color"]="dark green"
+    @result = item["color"]
     render 'hashes'
   end
 
